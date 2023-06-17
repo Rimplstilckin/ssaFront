@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
+
 import './App.css';
+import LightSwitch from './Components/lightSwitch';
+import WarningLight from './Components/WarningLight';
+import DataDisplay from './Components/DataDisplay';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <WarningLight polution={5900} />
+      <LightSwitch light={true} />
+      <DataDisplay text={'Temperature'} temp={24} />
+      <DataDisplay text={'Humidity'} temp={45} />
+      <DataDisplay text={'Polution'} temp={1340} />
     </div>
   );
 }
