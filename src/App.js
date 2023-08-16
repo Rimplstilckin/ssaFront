@@ -10,12 +10,12 @@ const fun = () => {
   console.log("Test");
 }
 
-const dummy = 'https://dummyjson.com/products/1';
-const backend = 'http://18.206.171.247:8080/'
+// const dummy = 'https://dummyjson.com/products/1';
+const backend = 'http://localhost:8080/message'
 
 async function logJSONData() {
   fetch(backend)
-    .then(res => res.json())
+    .then(res => res.text())
     .then(json => console.log(json))
 }
 

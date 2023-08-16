@@ -10,7 +10,7 @@ const LightSwitch = (props) => {
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           Test light switch
         </Typography>
-        <Switch defaultChecked checked={props.light} />
+        <Switch checked={props.light} />
       </CardContent>
     </Card>
   );
