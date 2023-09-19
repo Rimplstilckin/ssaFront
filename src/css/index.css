@@ -21,3 +21,16 @@ code {
   width: 50%;
   margin: auto;
 }
+h1{
+  color: #777;
+  text-align: center;
+}
+
+.buttons{
+  margin: 40px 0;
+  /* background-color: #777; */
+}
+
+.buttons button{
+  margin: 0 50px;
+}

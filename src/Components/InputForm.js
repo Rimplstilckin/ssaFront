@@ -1,4 +1,3 @@
-import React from "react";
 // Component
 import { TextField } from "@mui/material";
 import Stack from '@mui/material/Stack';
@@ -106,7 +105,7 @@ const InputFields = (props) => {
                         />
                     </div>
 
-                    <div className="buttons Cancel">
+                    <div className="buttons">
                         <Stack spacing={2} direction="row">
                             <Button variant="outlined">Cancel</Button>
                             <Button type='submit' variant="contained">Submit</Button>
