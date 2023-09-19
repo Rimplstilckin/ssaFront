@@ -1,0 +1,14 @@
+
+.wrapper{
+    width: 550px;
+    margin:auto;
+}
+
+.inputField{
+    margin: 40px auto;
+}
+
+.datelabel{
+    color:rgba(0, 0, 0, 0.6);
+    font-size: .75rem;
+}

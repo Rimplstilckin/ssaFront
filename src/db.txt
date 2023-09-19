@@ -1,0 +1,11 @@
+CREATE TABLE Zaposleni (
+    PersonID int (6),
+    FirstName varchar(255),
+    LastName varchar(255),
+    Born DATE (4),
+    Phone varchar(255),
+    Experience int(2),
+    Position varchar(255)
+    Education varchar(255)
+    Note varchar(1000)
+);
