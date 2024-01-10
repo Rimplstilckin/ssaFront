@@ -88,7 +88,6 @@ const InputFields = (props) => {
     return (
         <div className="container">
             <h1>Unos podataka o zaposlenom</h1>
-            <form method="Post" action="backendHanler.php">
                 <div className='form'>
 
                     <div className="inputField firstName">
@@ -185,14 +184,12 @@ const InputFields = (props) => {
                     <div className="buttons">
                         <Stack spacing={2} direction="row">
                             <Button variant="outlined">Cancel</Button>
-                            <Button type='submit' variant="contained" onClick={() => addWorker(worker)}>Submit</Button>
+                            <Button variant="contained" onClick={() => addWorker(worker)}>Submit</Button>
                         </Stack>
                     </div>
 
 
                 </div>
-
-            </form> 
         </div>
     );
 }
