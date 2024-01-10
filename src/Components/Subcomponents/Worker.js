@@ -2,40 +2,44 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 
-const Worker = () => {
+const Worker = (props) => {
     return(
         <Card>
             <CardContent>
                 <Typography variant="h5" component="div">
-                    ID: 
+                    ID: {props.worker.PersonID}
                 </Typography>
 
                 <Typography>
-                    Ime: 
+                    Ime: {props.worker.FirstName}
                 </Typography>
 
                 <Typography>
-                    Prezime: 
+                    Prezime: {props.worker.LastName}
                 </Typography>
                 
                 <Typography>
-                    Datum rođenja: 
+                    Datum rođenja: {props.worker.Born}
                 </Typography>
                 
                 <Typography>
-                    Broj telefona: 
+                    Broj telefona: {props.worker.Phone}
                 </Typography>
                 
                 <Typography>
-                    Godine iskustva: 
+                    Godine iskustva: {props.worker.Experience}
                 </Typography>
                 
                 <Typography>
-                    Radno mesto: 
+                    Radno mesto: {props.worker.Position}
                 </Typography>
                 
                 <Typography>
-                    Stručna sprema: 
+                    Stručna sprema: {props.worker.Education}
+                </Typography>   
+
+                <Typography>
+                    Napomena: {props.worker.Note}
                 </Typography>                
             </CardContent>
         </Card>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter , Routes, Route } from "react-router-dom";
 
 // MUI
 import Box from '@mui/material/Box';
@@ -17,13 +17,13 @@ function App(){
   return (
     <Box className= 'wrapper' >
       <Navigation />
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
             <Route index element={<InputForm/>} />
             <Route path='seeall' element={<WorkersData />} />
             <Route path='remove' element={<DeleteWorker />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </Box>
   );
 }
